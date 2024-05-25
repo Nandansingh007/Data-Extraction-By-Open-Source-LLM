@@ -30,55 +30,55 @@
 
 ## Technology Used
 
-### ScrapeGraph-ai
+### 1. ScrapeGraph-ai
 ScrapeGraphAI is a Python library for web scraping that leverages LLMs and direct graph logic to create scraping pipelines for websites and local documents (XML, HTML, JSON, etc.).
 
 - **URL of Reference**: [ScrapeGraph-ai GitHub Repository](https://github.com/VinciGit00/Scrapegraph-ai)
 
-### Ollama
+### 2. Ollama
 Ollama is a versatile platform for running LLMs locally on your device. It supports models such as Llama 3, Mistral, Gemma, and Phi 3, among others, facilitating easy deployment and customization.
 
 - **URL**: [Ollama](https://ollama.com/)
 
-### Llama3
+### 3. Llama3
 Llama 3 is the latest version of Meta's large language model, designed to enhance applications with advanced natural language processing capabilities. It ranges from 8 billion to 70 billion parameters.
 
-### Flask
+### 4. Flask
 Flask is a lightweight web framework for Python that simplifies the creation of web applications.
 
 ## Setup
 
-### Clone the Repository
+### 1. Clone the Repository
 
   - command: git clone https://github.com/Nandansingh007/Data-Extraction-By-Open-Source-LLM.git
 
-### Download Ollama
+### 2. Download Ollama
   - **URL** : https://ollama.com/download
   - Make sure it is running by command: ollama serve
 
-### Create virtual environment and Activate it 
+### 3. Create virtual environment and Activate it 
 - command: python -m venv .venv
 - command: .venv\scripts\activate
 
-### Install requirement file
+### 4. Install requirement file
   - command:	pip install -r requirements.txt
 
 
-### Install playwright with command 
+### 5. Install playwright with command 
   - command: playwright install
 
-### Pull Llama3 and embedding:
+### 6. Pull Llama3 and embedding:
 - command: ollama pull llama3 
 - command: ollam pull nomic-embed-text
 
 ## Testing
 
-### Use app.py code
+### 1. Use app.py code
 - This code is for testing purpose only.
 - change the variable (source = URL or HTML block ). Works both for URL or HTML block
 - Run this by using command: python app.py
 
-### Use main.py code
+### 2. Use main.py code
 - This is Flask API implementation of the code
 - Run the code by command: python main.py
 - Home page: http://127.0.0.1:8000/
@@ -98,7 +98,7 @@ Flask is a lightweight web framework for Python that simplifies the creation of 
 - The running of the procedure is slow since it takes pc specification which is much low than required specification to run LLMs
 - The testing could take 10-15 mins depending on PC specification
 
-## Further Enhancement
+## Further Enhancements
 - This use single page scrapper for URL using SmartScraperGraph. So, SeachGraph which is multipage scrapper could be used during fully functional project
 - For Prompting using LlaMa3, ollama is used for simple solution in local pc. So for production we can used most powerful LlaMa3 with 70b parameters and write custom prompt for further enhancement
 - This is simple API design using Flask. So, it can be enhanced using FastAPI and other API enhancement Techniques
