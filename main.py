@@ -1,5 +1,5 @@
 # Importing Necessary Library
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import nest_asyncio
 from scrapegraphai.graphs import SmartScraperGraph
 import json
@@ -38,7 +38,7 @@ def scrape():
     }
 
     scraper_graph = SmartScraperGraph(
-        prompt="List me all the products with their price, Number of Ratings, Product Description, Rating out of 5 if available",
+        prompt="List me all the products with their Name, price, Number of Ratings, Product Description, Rating out of 5 if available",
         source=url,
         config=graph_config
     )
@@ -49,4 +49,4 @@ def scrape():
     return jsonify(result)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000)
+    app.run(host='0.0.0.0', port=8000,debug=True)
