@@ -54,6 +54,7 @@ Flask is a lightweight web framework for Python that simplifies the creation of 
 
 ### 2. Download Ollama
   - **URL** : https://ollama.com/download
+  - Install the file and make sure it is running
   - Make sure it is running by command: ollama serve
 
 ### 3. Create virtual environment and Activate it 
