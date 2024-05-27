@@ -70,7 +70,7 @@ Flask is a lightweight web framework for Python that simplifies the creation of 
 
 ### 6. Pull Llama3 and embedding:
 - command: ollama pull llama3 
-- command: ollam pull nomic-embed-text
+- command: ollama pull nomic-embed-text
 
 ## Testing
 
